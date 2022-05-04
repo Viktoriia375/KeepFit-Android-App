@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/green_background"
+            app:elevation="0sp"
+            app:fabAlignmentMode="center"
+            app:fabCradleMargin="10sp"
+            app:fabCradleRoundedCornerRadius="15sp"
+            app:fabCradleVerticalOffset="0sp" />
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/top_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            app:backgroundTint="@color/green_background"
+            app:elevation="0sp"
+            app:fabAlignmentMode="center" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map_icon"
+            app:layout_anchor="@id/bottom_app_bar"
+            app:maxImageSize="29dp" />
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_marginTop="-10sp"
+            app:layout_anchor="@+id/top_app_bar"
+            app:layout_anchorGravity="center"
+            app:srcCompat="@drawable/avatar_icon" />
+
+        <ImageView
+            android:id="@+id/search_field_back"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginHorizontal="30sp"
+            android:layout_marginTop="70sp"
+            app:srcCompat="@drawable/search_field" />
+
+        <EditText
+            android:id="@+id/search_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70sp"
+            android:layout_marginTop="62sp"
+            android:layout_marginEnd="40sp"
+            android:backgroundTint="#00000000"
+            android:ems="10"
+            android:inputType="text|textAutoComplete" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20sp"
+        app:maxImageSize="35dp"
+        android:elevation="0sp"
+        app:elevation="0sp"
+       />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/trophy_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="90sp"
+        android:elevation="0sp"
+        android:src="@drawable/trophy_cup_icon"
+        app:elevation="0sp"
+        app:maxImageSize="33sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/statistic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="90sp"
+        android:src="@drawable/statistic_icon"
+        app:maxImageSize="33sp"
+        android:elevation="0sp"
+        app:elevation="0sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20sp"
+        android:src="@drawable/profile_icon"
+        app:maxImageSize="37sp"
+        android:elevation="0sp"
+        app:elevation="0sp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0sp"
+        app:maxImageSize="32dp"
+        android:elevation="0sp"
+        app:elevation="0sp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/three_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/three_point_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0sp"
+        app:maxImageSize="32dp"
+        android:elevation="0sp"
+        app:elevation="0sp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        app:backgroundTint="#00000000"
+        android:layout_marginTop="58sp"
+        android:layout_marginStart="23sp"
+        app:elevation="0sp"
+        android:elevation="0sp"
+        android:src="@drawable/search_icon"/>
+
+</RelativeLayout>
